@@ -13,3 +13,5 @@ WORKDIR /usr/src/app
 # 3. Sao chép các tệp định nghĩa thư viện (package.json và package-lock.json) vào thư mục hiện tại
 # Việc sao chép riêng các tệp này trước giúp tận dụng Docker Cache (không phải cài lại thư viện nếu code thay đổi)
 COPY package*.json ./
+# 4. Chạy lệnh cài đặt các thư viện (dependencies) đã liệt kê trong package.json
+RUN npm install
