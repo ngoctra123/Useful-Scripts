@@ -20,3 +20,15 @@ const exchangeRates = {
     "EUR_TO_VND": 27000, // 1 EUR = 27,000 VND
     "JPY_TO_VND": 165    // 1 JPY = 165 VND
 };
+/**
+ * Hàm chuyển đổi một số tiền ngoại tệ sang VND
+ * @param {number} amount - Số tiền cần chuyển đổi
+ * @param {string} currency - Mã loại tiền (ví dụ: "USD", "EUR", "JPY")
+ */
+function convertToVND(amount, currency) {
+    // 2. Tạo mã tra cứu động bằng Template Literals (dấu backtick ``)
+    // Nếu currency là "USD", biến key sẽ trở thành "USD_TO_VND"
+    const rateKey = `${currency}_TO_VND`;
+
+    // 3. Truy xuất tỷ giá từ đối tượng exchangeRates dựa trên mã vừa tạo
+    const rate = exchangeRates[rateKey];
