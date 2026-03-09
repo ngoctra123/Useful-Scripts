@@ -9,3 +9,8 @@ echo "Hoàn thành!"
 
 # In thông báo ra màn hình để người dùng biết quá trình bắt đầu
 echo "Đang bắt đầu cập nhật hệ thống..."
+# sudo apt update: Cập nhật danh sách các gói phần mềm từ các kho lưu trữ (repositories)
+# &&: Toán tử logic "AND", lệnh phía sau chỉ chạy nếu lệnh phía trước thành công
+# sudo apt upgrade -y: Nâng cấp tất cả các phần mềm đã cài đặt lên phiên bản mới nhất
+# -y: Tự động trả lời "Yes" (đồng ý) cho tất cả các câu hỏi xác nhận trong quá trình nâng cấp
+sudo apt update && sudo apt upgrade -y
