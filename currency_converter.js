@@ -36,3 +36,15 @@ function convertToVND(amount, currency) {
     if (rate) {
         // Thực hiện phép tính: Số tiền * Tỷ giá
         const total = amount * rate;
+ // 5. Định dạng số tiền theo tiêu chuẩn Việt Nam (thêm dấu chấm phân cách hàng nghìn)
+        // Ví dụ: 2500000 -> "2.500.000"
+        return total.toLocaleString('vi-VN') + " VND";
+    }
+
+    // 6. Trả về thông báo lỗi nếu không tìm thấy tỷ giá phù hợp
+    return "Không hỗ trợ loại tiền này";
+}
+
+// Chạy thử hàm: Chuyển đổi 100 USD sang VND
+// Kết quả in ra: "2.500.000 VND"
+console.log(convertToVND(100, "USD"));
