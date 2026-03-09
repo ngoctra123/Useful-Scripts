@@ -32,3 +32,7 @@ function convertToVND(amount, currency) {
 
     // 3. Truy xuất tỷ giá từ đối tượng exchangeRates dựa trên mã vừa tạo
     const rate = exchangeRates[rateKey];
+ // 4. Kiểm tra xem loại tiền này có tồn tại trong dữ liệu tỷ giá không
+    if (rate) {
+        // Thực hiện phép tính: Số tiền * Tỷ giá
+        const total = amount * rate;
