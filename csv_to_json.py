@@ -12,3 +12,5 @@ def convert_csv_json(csv_path, json_path):
         jsonf.write(json.dumps(data, indent=4))
 
 # convert_csv_json('data.csv', 'data.json')
+import csv   # Thư viện hỗ trợ đọc và ghi file CSV
+import json  # Thư viện hỗ trợ xử lý dữ liệu định dạng JSON
