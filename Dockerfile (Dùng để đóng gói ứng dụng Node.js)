@@ -7,3 +7,6 @@ EXPOSE 8080
 CMD [ "node", "app.js" ]
 # 1. Định nghĩa hình ảnh nền (base image): Sử dụng Node.js phiên bản 16
 FROM node:16
+# 2. Tạo một thư mục làm việc bên trong container (tương tự như lệnh 'cd')
+# Mọi câu lệnh tiếp theo sẽ được thực thi tại đường dẫn này
+WORKDIR /usr/src/app
