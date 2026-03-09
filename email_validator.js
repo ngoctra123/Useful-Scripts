@@ -22,3 +22,16 @@ function isValidEmail(email) {
     // [^\s@]+: Phần mở rộng (ví dụ: 'com', 'vn') - không chứa khoảng trắng/@
     // $: Kết thúc chuỗi
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Sử dụng phương thức .test() để so khớp chuỗi email với biểu thức chính quy
+    return regex.test(email);
+}
+
+// Danh sách các email mẫu để chạy thử nghiệm
+const testEmails = ["test@gmail.com", "invalid-email", "hello@company.co"];
+
+// Duyệt qua từng email trong mảng testEmails
+testEmails.forEach(email => {
+    // Gọi hàm isValidEmail và sử dụng toán tử ba ngôi (? :) để quyết định nội dung thông báo
+    // In kết quả ra màn hình console
+    console.log(`${email}: ${isValidEmail(email) ? "Hợp lệ" : "Không hợp lệ"}`);
+});
