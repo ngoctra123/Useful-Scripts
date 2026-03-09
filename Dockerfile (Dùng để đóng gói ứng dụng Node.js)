@@ -5,3 +5,5 @@ RUN npm install
 COPY . .
 EXPOSE 8080
 CMD [ "node", "app.js" ]
+# 1. Định nghĩa hình ảnh nền (base image): Sử dụng Node.js phiên bản 16
+FROM node:16
