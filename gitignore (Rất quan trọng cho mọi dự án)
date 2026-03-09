@@ -11,3 +11,11 @@ npm-debug.log
 # Mac/Windows
 .DS_Store
 Thumbs.db
+# === Cấu hình cho Python ===
+
+# Thư mục chứa các file mã máy (bytecode) được Python tự động tạo ra khi chạy chương trình
+__pycache__/
+
+# Các file đã được biên dịch của Python (.pyc, .pyo, .pyd) 
+# Chúng ta không cần lưu trữ vì chúng có thể được tạo lại từ file .py gốc
+*.py[cod]
