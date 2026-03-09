@@ -12,3 +12,13 @@ testEmails.forEach(email => {
  * @param {string} email - Chuỗi email cần kiểm tra
  * @returns {boolean} - Trả về true nếu hợp lệ, false nếu không
  */
+function isValidEmail(email) {
+    // Định nghĩa biểu thức chính quy (Regex) để kiểm tra định dạng email
+    // ^: Bắt đầu chuỗi
+    // [^\s@]+: Một hoặc nhiều ký tự KHÔNG phải là khoảng trắng hoặc ký hiệu @
+    // @: Phải có một ký hiệu @ ở giữa
+    // [^\s@]+: Tên miền (ví dụ: 'gmail', 'yahoo') - không chứa khoảng trắng/@
+    // \.: Phải có một dấu chấm (.) sau tên miền
+    // [^\s@]+: Phần mở rộng (ví dụ: 'com', 'vn') - không chứa khoảng trắng/@
+    // $: Kết thúc chuỗi
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
