@@ -19,3 +19,14 @@ __pycache__/
 # Các file đã được biên dịch của Python (.pyc, .pyo, .pyd) 
 # Chúng ta không cần lưu trữ vì chúng có thể được tạo lại từ file .py gốc
 *.py[cod]
+# Các thư mục môi trường ảo (Virtual Environment)
+# Thư mục này chứa các thư viện đã cài đặt, thường rất nặng và không cần thiết đưa lên server
+env/
+venv/
+
+
+# === Cấu hình cho Node.js ===
+
+# Thư mục chứa toàn bộ các thư viện (dependencies) được cài đặt qua npm hoặc yarn
+# Thư mục này cực kỳ nặng, chỉ cần giữ file package.json là đủ để cài lại
+node_modules/
