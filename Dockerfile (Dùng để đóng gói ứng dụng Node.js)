@@ -15,3 +15,13 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 # 4. Chạy lệnh cài đặt các thư viện (dependencies) đã liệt kê trong package.json
 RUN npm install
+# 5. Sao chép toàn bộ mã nguồn còn lại từ máy máy tính của bạn vào trong container
+COPY . .
+
+# 6. Thông báo rằng container sẽ lắng nghe (mở) cổng 8080 khi chạy
+# Lưu ý: Lệnh này chỉ mang tính chất tài liệu, bạn vẫn cần map cổng khi chạy container
+EXPOSE 8080
+
+# 7. Lệnh mặc định để khởi chạy ứng dụng khi container bắt đầu hoạt động
+# Ở đây là chạy tệp app.js bằng môi trường node
+CMD [ "node", "app.js" ]
