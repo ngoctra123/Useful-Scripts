@@ -13,3 +13,10 @@ function convertToVND(amount, currency) {
 }
 
 console.log(convertToVND(100, "USD"));
+/ 1. Khai báo một đối tượng (Object) lưu trữ tỷ giá hối đoái
+// Mỗi thuộc tính đóng vai trò như một "bản đồ" để tra cứu giá trị quy đổi sang VND
+const exchangeRates = {
+    "USD_TO_VND": 25000, // 1 USD = 25,000 VND
+    "EUR_TO_VND": 27000, // 1 EUR = 27,000 VND
+    "JPY_TO_VND": 165    // 1 JPY = 165 VND
+};
