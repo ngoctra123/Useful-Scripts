@@ -33,3 +33,11 @@ def convert_csv_json(csv_path, json_path):
         for rows in csv_reader:
             # Thêm dictionary của dòng hiện tại vào danh sách data
             data.append(rows)
+ # Bước 2: Ghi dữ liệu đã thu thập được vào file JSON
+    # 'w' (write) là chế độ mở file để ghi dữ liệu mới
+    with open(json_path, 'w', encoding='utf-8') as jsonf:
+        # json.dumps() chuyển đổi danh sách Python (data) thành chuỗi JSON
+        # indent=4: Tự động thụt lề 4 khoảng trắng để file JSON dễ đọc hơn (Pretty Print)
+        # ensure_ascii=False: (Tùy chọn thêm) giúp hiển thị đúng ký tự tiếng Việt trong file JSON
+        json_output = json.dumps(data, indent=4, ensure_ascii=False)
+        jsonf.write(json_output)
