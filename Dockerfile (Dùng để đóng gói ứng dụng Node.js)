@@ -10,3 +10,6 @@ FROM node:16
 # 2. Tạo một thư mục làm việc bên trong container (tương tự như lệnh 'cd')
 # Mọi câu lệnh tiếp theo sẽ được thực thi tại đường dẫn này
 WORKDIR /usr/src/app
+# 3. Sao chép các tệp định nghĩa thư viện (package.json và package-lock.json) vào thư mục hiện tại
+# Việc sao chép riêng các tệp này trước giúp tận dụng Docker Cache (không phải cài lại thư viện nếu code thay đổi)
+COPY package*.json ./
