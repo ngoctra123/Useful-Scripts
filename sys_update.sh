@@ -14,3 +14,12 @@ echo "Đang bắt đầu cập nhật hệ thống..."
 # sudo apt upgrade -y: Nâng cấp tất cả các phần mềm đã cài đặt lên phiên bản mới nhất
 # -y: Tự động trả lời "Yes" (đồng ý) cho tất cả các câu hỏi xác nhận trong quá trình nâng cấp
 sudo apt update && sudo apt upgrade -y
+# In thông báo dọn dẹp
+echo "Dọn dẹp các file thừa..."
+
+# sudo apt autoremove -y: Tự động gỡ bỏ các gói phần mềm/thư viện đã được cài đặt tự động 
+# nhưng hiện tại không còn chương trình nào cần dùng đến chúng nữa (giúp tiết kiệm dung lượng)
+sudo apt autoremove -y
+
+# Thông báo hoàn tất quá trình
+echo "Hoàn thành!"
