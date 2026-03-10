@@ -18,3 +18,11 @@ def count_words(filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
             # Đọc toàn bộ nội dung của file và lưu vào biến 'text'
             text = f.read()
+ # Tách nội dung thành một danh sách các từ dựa trên khoảng trắng (dấu cách, xuống dòng, tab)
+            words = text.split()
+            
+            # In ra số lượng phần tử trong danh sách 'words' (tương ứng với số từ)
+            print(f"Số lượng từ: {len(words)}")
+            
+            # In ra độ dài của chuỗi 'text' (tương ứng với tổng số ký tự, bao gồm cả khoảng trắng)
+            print(f"Số lượng ký tự: {len(text)}")
