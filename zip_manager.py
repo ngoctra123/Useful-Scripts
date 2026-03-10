@@ -15,3 +15,5 @@ def create_zip(folder_name, output_filename):
 # shutil.make_archive thực hiện việc nén:
     # - output_filename: Tên tệp nén sẽ tạo ra (hàm sẽ tự thêm đuôi .zip)
     # - 'zip': Định dạng nén (có thể thay bằng 'tar', 'gztar', v.v.)
+# - folder_name: Đường dẫn tới thư mục mà bạn muốn nén
+    shutil.make_archive(output_filename, 'zip', folder_name)
