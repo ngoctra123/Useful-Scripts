@@ -29,3 +29,9 @@ def get_titles(url):
             # .text: Lấy phần chữ bên trong thẻ
             # .strip(): Loại bỏ khoảng trắng thừa ở đầu và cuối chữ
             print(f"{i+1}. {title.text.strip()}")
+except Exception as e:
+        # Hiển thị lỗi nếu không truy cập được trang web (ví dụ: mất mạng, sai link)
+        print(f"Lỗi khi truy cập: {e}")
+
+# Gọi hàm để lấy tiêu đề từ trang Hacker News
+get_titles("https://news.ycombinator.com/")
