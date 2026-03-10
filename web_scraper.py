@@ -9,3 +9,5 @@ def get_titles(url):
         print(f"{i+1}. {title.text.strip()}")
 
 get_titles("https://news.ycombinator.com/")
+import requests  # Thư viện để gửi yêu cầu HTTP (tải nội dung trang web về)
+from bs4 import BeautifulSoup  # Thư viện để phân tích và trích xuất dữ liệu từ HTML
