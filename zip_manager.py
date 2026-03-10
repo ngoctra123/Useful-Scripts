@@ -23,3 +23,5 @@ def create_zip(folder_name, output_filename):
 def extract_zip(zip_file, extract_to):
 # shutil.unpack_archive thực hiện việc giải nén:
     # - zip_file: Tên hoặc đường dẫn tới tệp .zip cần giải nén
+# - extract_to: Thư mục mà bạn muốn chứa các tệp sau khi giải nén
+    shutil.unpack_archive(zip_file, extract_to)
