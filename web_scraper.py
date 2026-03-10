@@ -11,3 +11,11 @@ def get_titles(url):
 get_titles("https://news.ycombinator.com/")
 import requests  # Thư viện để gửi yêu cầu HTTP (tải nội dung trang web về)
 from bs4 import BeautifulSoup  # Thư viện để phân tích và trích xuất dữ liệu từ HTML
+def get_titles(url):
+    try:
+        # Gửi một yêu cầu GET đến địa chỉ URL được cung cấp
+        response = requests.get(url)
+        
+        # Chuyển đổi nội dung HTML của trang web thành một đối tượng "soup" để dễ tra cứu
+        # 'html.parser' là trình phân tích cú pháp mặc định của Python
+        soup = BeautifulSoup(response.text, 'html.parser')
