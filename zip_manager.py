@@ -12,3 +12,6 @@ def extract_zip(zip_file, extract_to):
 import shutil  # Nhập thư viện shutil, chuyên dùng cho các thao tác tệp tin và thư mục nâng cao (như sao chép, nén)
 # Hàm dùng để nén một thư mục thành tệp .zip
 def create_zip(folder_name, output_filename):
+# shutil.make_archive thực hiện việc nén:
+    # - output_filename: Tên tệp nén sẽ tạo ra (hàm sẽ tự thêm đuôi .zip)
+    # - 'zip': Định dạng nén (có thể thay bằng 'tar', 'gztar', v.v.)
