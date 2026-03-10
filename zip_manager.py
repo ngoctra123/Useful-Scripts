@@ -21,3 +21,5 @@ def create_zip(folder_name, output_filename):
     print(f"Đã tạo file {output_filename}.zip")
 # Hàm dùng để giải nén một tệp .zip vào một thư mục chỉ định
 def extract_zip(zip_file, extract_to):
+# shutil.unpack_archive thực hiện việc giải nén:
+    # - zip_file: Tên hoặc đường dẫn tới tệp .zip cần giải nén
