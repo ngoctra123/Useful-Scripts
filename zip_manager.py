@@ -25,3 +25,5 @@ def extract_zip(zip_file, extract_to):
     # - zip_file: Tên hoặc đường dẫn tới tệp .zip cần giải nén
 # - extract_to: Thư mục mà bạn muốn chứa các tệp sau khi giải nén
     shutil.unpack_archive(zip_file, extract_to)
+# In thông báo xác nhận sau khi giải nén thành công
+    print(f"Đã giải nén vào {extract_to}")
