@@ -41,4 +41,4 @@ def convert_csv_json(csv_path, json_path):
         # ensure_ascii=False: (Tùy chọn thêm) giúp hiển thị đúng ký tự tiếng Việt trong file JSON
         json_output = json.dumps(data, indent=4, ensure_ascii=False)
         jsonf.write(json_output)
-# Ví dụ cách sử dụng (bỏ dấu # ở dưới để chạy thử)
+
