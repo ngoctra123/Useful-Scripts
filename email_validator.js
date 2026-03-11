@@ -33,5 +33,4 @@ const testEmails = ["test@gmail.com", "invalid-email", "hello@company.co"];
 testEmails.forEach(email => {
     // Gọi hàm isValidEmail và sử dụng toán tử ba ngôi (? :) để quyết định nội dung thông báo
     // In kết quả ra màn hình console
-    console.log(`${email}: ${isValidEmail(email) ? "Hợp lệ" : "Không hợp lệ"}`);
-});
+
