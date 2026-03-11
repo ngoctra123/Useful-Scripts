@@ -17,8 +17,6 @@ sudo apt update && sudo apt upgrade -y
 # In thông báo dọn dẹp
 echo "Dọn dẹp các file thừa..."
 
-# sudo apt autoremove -y: Tự động gỡ bỏ các gói phần mềm/thư viện đã được cài đặt tự động 
-# nhưng hiện tại không còn chương trình nào cần dùng đến chúng nữa (giúp tiết kiệm dung lượng)
-sudo apt autoremove -y
+
 
 
