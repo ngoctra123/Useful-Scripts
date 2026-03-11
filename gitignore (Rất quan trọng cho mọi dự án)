@@ -39,5 +39,4 @@ npm-debug.log
 # File lưu thông tin cấu hình hiển thị thư mục của hệ điều hành macOS
 .DS_Store
 
-# File lưu dữ liệu hình ảnh thu nhỏ (thumbnail) của hệ điều hành Windows
-Thumbs.db
+
