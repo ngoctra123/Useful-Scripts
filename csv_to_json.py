@@ -42,4 +42,3 @@ def convert_csv_json(csv_path, json_path):
         json_output = json.dumps(data, indent=4, ensure_ascii=False)
         jsonf.write(json_output)
 # Ví dụ cách sử dụng (bỏ dấu # ở dưới để chạy thử)
-# convert_csv_json('data.csv', 'data.json')
