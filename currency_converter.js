@@ -47,4 +47,4 @@ function convertToVND(amount, currency) {
 
 // Chạy thử hàm: Chuyển đổi 100 USD sang VND
 // Kết quả in ra: "2.500.000 VND"
-console.log(convertToVND(100, "USD"));
+
