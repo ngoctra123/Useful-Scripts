@@ -33,5 +33,4 @@ except Exception as e:
         # Hiển thị lỗi nếu không truy cập được trang web (ví dụ: mất mạng, sai link)
         print(f"Lỗi khi truy cập: {e}")
 
-# Gọi hàm để lấy tiêu đề từ trang Hacker News
-get_titles("https://news.ycombinator.com/")
+
