@@ -26,6 +26,4 @@ def count_words(filepath):
             
             # In ra độ dài của chuỗi 'text' (tương ứng với tổng số ký tự, bao gồm cả khoảng trắng)
             print(f"Số lượng ký tự: {len(text)}")
-except FileNotFoundError:
-        # Thông báo lỗi nếu đường dẫn file cung cấp không chính xác hoặc file không tồn tại
-        print("Không tìm thấy file! Vui lòng kiểm tra lại đường dẫn.")
+
