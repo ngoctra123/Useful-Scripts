@@ -31,6 +31,5 @@ const testEmails = ["test@gmail.com", "invalid-email", "hello@company.co"];
 
 // Duyệt qua từng email trong mảng testEmails
 testEmails.forEach(email => {
-    // Gọi hàm isValidEmail và sử dụng toán tử ba ngôi (? :) để quyết định nội dung thông báo
-    // In kết quả ra màn hình console
+   
 
