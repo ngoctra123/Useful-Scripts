@@ -29,7 +29,3 @@ def count_words(filepath):
 except FileNotFoundError:
         # Thông báo lỗi nếu đường dẫn file cung cấp không chính xác hoặc file không tồn tại
         print("Không tìm thấy file! Vui lòng kiểm tra lại đường dẫn.")
-
-# Ví dụ cách gọi hàm:
-# Để chạy thử, bạn cần tạo một file tên là 'note.txt' cùng thư mục với file code này
-# count_words('note.txt')
