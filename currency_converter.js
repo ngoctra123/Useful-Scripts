@@ -45,6 +45,5 @@ function convertToVND(amount, currency) {
     return "Không hỗ trợ loại tiền này";
 }
 
-// Chạy thử hàm: Chuyển đổi 100 USD sang VND
-// Kết quả in ra: "2.500.000 VND"
+
 
