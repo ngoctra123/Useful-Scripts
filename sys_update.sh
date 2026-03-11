@@ -21,5 +21,4 @@ echo "Dọn dẹp các file thừa..."
 # nhưng hiện tại không còn chương trình nào cần dùng đến chúng nữa (giúp tiết kiệm dung lượng)
 sudo apt autoremove -y
 
-# Thông báo hoàn tất quá trình
-echo "Hoàn thành!"
+
