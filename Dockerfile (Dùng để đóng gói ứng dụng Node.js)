@@ -24,4 +24,4 @@ EXPOSE 8080
 
 # 7. Lệnh mặc định để khởi chạy ứng dụng khi container bắt đầu hoạt động
 # Ở đây là chạy tệp app.js bằng môi trường node
-CMD [ "node", "app.js" ]
+
