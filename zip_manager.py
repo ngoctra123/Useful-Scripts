@@ -27,5 +27,5 @@ def extract_zip(zip_file, extract_to):
     shutil.unpack_archive(zip_file, extract_to)
 # In thông báo xác nhận sau khi giải nén thành công
     print(f"Đã giải nén vào {extract_to}")
-# Ví dụ sử dụng (đang được để trong dấu comment):
+
 
