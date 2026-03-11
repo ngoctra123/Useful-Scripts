@@ -34,9 +34,5 @@ node_modules/
 npm-debug.log
 
 
-# === Các file hệ thống của Mac/Windows ===
-
-# File lưu thông tin cấu hình hiển thị thư mục của hệ điều hành macOS
-.DS_Store
 
 
