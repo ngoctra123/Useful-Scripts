@@ -29,7 +29,6 @@ function isValidEmail(email) {
 // Danh sách các email mẫu để chạy thử nghiệm
 const testEmails = ["test@gmail.com", "invalid-email", "hello@company.co"];
 
-// Duyệt qua từng email trong mảng testEmails
-testEmails.forEach(email => {
+
    
 
