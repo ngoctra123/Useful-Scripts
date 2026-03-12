@@ -14,8 +14,7 @@ echo "Đang bắt đầu cập nhật hệ thống..."
 # sudo apt upgrade -y: Nâng cấp tất cả các phần mềm đã cài đặt lên phiên bản mới nhất
 # -y: Tự động trả lời "Yes" (đồng ý) cho tất cả các câu hỏi xác nhận trong quá trình nâng cấp
 sudo apt update && sudo apt upgrade -y
-# In thông báo dọn dẹp
-echo "Dọn dẹp các file thừa..."
+
 
 
 
