@@ -20,6 +20,6 @@ COPY . .
 
 # 6. Thông báo rằng container sẽ lắng nghe (mở) cổng 8080 khi chạy
 # Lưu ý: Lệnh này chỉ mang tính chất tài liệu, bạn vẫn cần map cổng khi chạy container
-EXPOSE 8080
+
 
 
