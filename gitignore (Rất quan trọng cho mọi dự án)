@@ -30,8 +30,7 @@ venv/
 # Thư mục chứa toàn bộ các thư viện (dependencies) được cài đặt qua npm hoặc yarn
 # Thư mục này cực kỳ nặng, chỉ cần giữ file package.json là đủ để cài lại
 node_modules/
-# File nhật ký ghi lại các lỗi xảy ra trong quá trình chạy lệnh npm
-npm-debug.log
+
 
 
 
