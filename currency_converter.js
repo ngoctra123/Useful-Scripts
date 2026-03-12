@@ -41,9 +41,6 @@ function convertToVND(amount, currency) {
         return total.toLocaleString('vi-VN') + " VND";
     }
 
-    // 6. Trả về thông báo lỗi nếu không tìm thấy tỷ giá phù hợp
-    return "Không hỗ trợ loại tiền này";
-}
-
+  
 
 
